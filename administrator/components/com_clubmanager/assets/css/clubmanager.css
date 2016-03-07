@@ -1,0 +1,196 @@
+#label_fullname
+{
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 50px;
+}
+
+#df_fullname
+{
+  position: absolute;
+  left: 90px;
+  top: 30px;
+  width: 100px;
+}
+
+
+
+
+
+
+.icon-48-countries {
+      background-image: url(../images/l_countries.png);
+      padding-left:60px!important;
+}
+
+.icon-48-country {
+      background-image: url(../images/l_countries.png);
+      padding-left:60px!important;
+}
+
+.icon-48-counties {
+      background-image: url(../images/l_counties.png);
+      padding-left:60px!important;
+}
+
+.icon-48-county {
+      background-image: url(../images/l_counties.png);
+      padding-left:60px!important;
+}
+
+.icon-48-districts {
+      background-image: url(../images/l_districts.png);
+      padding-left:60px!important;
+}
+
+.icon-48-district {
+      background-image: url(../images/l_districts.png);
+      padding-left:60px!important;
+}
+
+.icon-48-roles {
+      background-image: url(../images/l_roles.png);
+      padding-left:60px!important;
+}
+
+.icon-48-role {
+      background-image: url(../images/l_roles.png);
+      padding-left:60px!important;
+}
+
+.icon-48-peoplegroups {
+      background-image: url(../images/l_peoplegroups.png);
+      padding-left:60px!important;
+}
+
+.icon-48-peoplegroup {
+      background-image: url(../images/l_peoplegroups.png);
+      padding-left:60px!important;
+}
+
+.icon-48-genders {
+      background-image: url(../images/l_genders.png);
+      padding-left:60px!important;
+}
+
+.icon-48-gender {
+      background-image: url(../images/l_genders.png);
+      padding-left:60px!important;
+}
+
+.icon-48-salutations {
+      background-image: url(../images/l_salutations.png);
+      padding-left:60px!important;
+}
+
+.icon-48-salutation {
+      background-image: url(../images/l_salutations.png);
+      padding-left:60px!important;
+}
+
+.icon-48-unions {
+      background-image: url(../images/l_unions.png);
+      padding-left:60px!important;
+}
+
+.icon-48-union {
+      background-image: url(../images/l_unions.png);
+      padding-left:60px!important;
+}
+
+.icon-48-unionsinternational {
+      background-image: url(../images/l_unionsinternational.png);
+      padding-left:60px!important;
+}
+
+.icon-48-unioninternational {
+      background-image: url(../images/l_unionsinternational.png);
+      padding-left:60px!important;
+}
+
+.icon-48-unioncountrys {
+      background-image: url(../images/l_unioncountrys.png);
+      padding-left:60px!important;
+}
+
+.icon-48-unioncountry {
+      background-image: url(../images/l_unioncountrys.png);
+      padding-left:60px!important;
+}
+
+.icon-48-unioncounties {
+      background-image: url(../images/l_unioncounties.png);
+      padding-left:60px!important;
+}
+
+.icon-48-unioncounty {
+      background-image: url(../images/l_unioncounties.png);
+      padding-left:60px!important;
+}
+
+.icon-48-uniondistricts {
+      background-image: url(../images/l_uniondistricts.png);
+      padding-left:60px!important;
+}
+
+.icon-48-uniondistrict {
+      background-image: url(../images/l_uniondistricts.png);
+      padding-left:60px!important;
+}
+
+.icon-48-clubs {
+      background-image: url(../images/l_clubs.png);
+      padding-left:60px!important;
+}
+
+.icon-48-club {
+      background-image: url(../images/l_clubs.png);
+      padding-left:60px!important;
+}
+
+.icon-48-citys {
+      background-image: url(../images/l_citys.png);
+      padding-left:60px!important;
+}
+
+.icon-48-city {
+      background-image: url(../images/l_citys.png);
+      padding-left:60px!important;
+}
+
+.icon-48-settings {
+      background-image: url(../images/l_settings.png);
+      padding-left:60px!important;
+}
+
+.icon-48-setting {
+      background-image: url(../images/l_settings.png);
+      padding-left:60px!important;
+}
+
+.icon-48-changelogs {
+      background-image: url(../images/l_changelogs.png);
+      padding-left:60px!important;
+}
+
+.icon-48-changelog {
+      background-image: url(../images/l_changelogs.png);
+      padding-left:60px!important;
+}
+
+.icon-48-peoples {
+      background-image: url(../images/l_peoples.png);
+      padding-left:60px!important;
+}
+
+.icon-48-people {
+      background-image: url(../images/l_peoples.png);
+      padding-left:60px!important;
+}
+
+
+
+.other-filters{
+    padding: 0 14px;
+}

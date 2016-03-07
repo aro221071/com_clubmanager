@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_clubmanager</name>
+    <creationDate>2015-05-25</creationDate>
+    <copyright>Copyright (C) 2015. Alle Rechte vorbehalten.</copyright>
+    <license>GNU General Public License Version 2 oder später; siehe LICENSE.txt</license>
+    <author>Roman Artelsmair</author>
+    <authorEmail>roman@artelsmair.at</authorEmail>
+    <authorUrl>http://www.artelsmair.at</authorUrl>
+    <version>1.0.0</version>
+    <description>Manage your club</description>
+    
+    <scriptfile>script.php</scriptfile>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>clubmanager.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <languages folder="languages/site">
+        
+			<language tag="en-GB">en-GB/en-GB.com_clubmanager.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_clubmanager.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_clubmanager/assets/images/s_com_clubmanager.png" >COM_CLUBMANAGER</menu>
+        <submenu>
+            
+			<menu link="option=com_clubmanager&amp;view=countries" view="countries" img="components/com_clubmanager/assets/images/s_countries.png" alt="Clubmanager/Countries">COM_CLUBMANAGER_TITLE_COUNTRIES</menu>
+                          <submenu>
+                            <menu link="option=com_clubmanager&amp;view=countries" view="countries" img="components/com_clubmanager/assets/images/s_countries.png" alt="Clubmanager/Countries">COM_CLUBMANAGER_TITLE_COUNTRIES</menu>
+                          </submenu>    
+			<menu link="option=com_clubmanager&amp;view=counties" view="counties" img="components/com_clubmanager/assets/images/s_counties.png" alt="Clubmanager/Counties">COM_CLUBMANAGER_TITLE_COUNTIES</menu>
+
+			<menu link="option=com_clubmanager&amp;view=districts" view="districts" img="components/com_clubmanager/assets/images/s_districts.png" alt="Clubmanager/Districts">COM_CLUBMANAGER_TITLE_DISTRICTS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=roles" view="roles" img="components/com_clubmanager/assets/images/s_roles.png" alt="Clubmanager/Roles">COM_CLUBMANAGER_TITLE_ROLES</menu>
+
+			<menu link="option=com_clubmanager&amp;view=peoplegroups" view="peoplegroups" img="components/com_clubmanager/assets/images/s_peoplegroups.png" alt="Clubmanager/Peoplegroups">COM_CLUBMANAGER_TITLE_PEOPLEGROUPS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=genders" view="genders" img="components/com_clubmanager/assets/images/s_genders.png" alt="Clubmanager/Genders">COM_CLUBMANAGER_TITLE_GENDERS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=salutations" view="salutations" img="components/com_clubmanager/assets/images/s_salutations.png" alt="Clubmanager/Salutations">COM_CLUBMANAGER_TITLE_SALUTATIONS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=unions" view="unions" img="components/com_clubmanager/assets/images/s_unions.png" alt="Clubmanager/Unions">COM_CLUBMANAGER_TITLE_UNIONS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=unionsinternational" view="unionsinternational" img="components/com_clubmanager/assets/images/s_unionsinternational.png" alt="Clubmanager/Unionsinternational">COM_CLUBMANAGER_TITLE_UNIONSINTERNATIONAL</menu>
+
+			<menu link="option=com_clubmanager&amp;view=unioncountrys" view="unioncountrys" img="components/com_clubmanager/assets/images/s_unioncountrys.png" alt="Clubmanager/Unioncountrys">COM_CLUBMANAGER_TITLE_UNIONCOUNTRYS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=unioncounties" view="unioncounties" img="components/com_clubmanager/assets/images/s_unioncounties.png" alt="Clubmanager/Unioncounties">COM_CLUBMANAGER_TITLE_UNIONCOUNTIES</menu>
+
+			<menu link="option=com_clubmanager&amp;view=uniondistricts" view="uniondistricts" img="components/com_clubmanager/assets/images/s_uniondistricts.png" alt="Clubmanager/Uniondistricts">COM_CLUBMANAGER_TITLE_UNIONDISTRICTS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=clubs" view="clubs" img="components/com_clubmanager/assets/images/s_clubs.png" alt="Clubmanager/Clubs">COM_CLUBMANAGER_TITLE_CLUBS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=citys" view="citys" img="components/com_clubmanager/assets/images/s_citys.png" alt="Clubmanager/Citys">COM_CLUBMANAGER_TITLE_CITYS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=settings" view="settings" img="components/com_clubmanager/assets/images/s_settings.png" alt="Clubmanager/Settings">COM_CLUBMANAGER_TITLE_SETTINGS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=changelogs" view="changelogs" img="components/com_clubmanager/assets/images/s_changelogs.png" alt="Clubmanager/Changelogs">COM_CLUBMANAGER_TITLE_CHANGELOGS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=peoples" view="peoples" img="components/com_clubmanager/assets/images/s_peoples.png" alt="Clubmanager/Peoples">COM_CLUBMANAGER_TITLE_PEOPLES</menu>
+
+			<menu link="option=com_clubmanager&amp;view=emailnewsletters" view="emailnewsletters" img="components/com_clubmanager/assets/images/s_emailnewsletters.png" alt="Clubmanager/Emailnewsletters">COM_CLUBMANAGER_TITLE_EMAILNEWSLETTERS</menu>
+
+			<menu link="option=com_clubmanager&amp;view=postnewsletters" view="postnewsletters" img="components/com_clubmanager/assets/images/s_postnewsletters.png" alt="Clubmanager/Postnewsletters">COM_CLUBMANAGER_TITLE_POSTNEWSLETTERS</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>clubmanager.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+            
+			<language tag="en-GB">en-GB/en-GB.com_clubmanager.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_clubmanager.sys.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_clubmanager.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_clubmanager.sys.ini</language>
+        </languages>
+    </administration>
+    <plugins>
+        <plugin group="search" plugin="clubmanager"/>
+    </plugins>
+    <modules>
+		<module module="mod_clubmanager" />
+	</modules>
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.component-creator.com/ -->

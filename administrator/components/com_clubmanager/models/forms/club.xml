@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_CLUBMANAGER_FORM_LBL_CLUB_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="fullname" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_FULLNAME"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_FULLNAME" 
+                                                    
+                                                    
+                                                     required="true" 
+                                                    filter="safehtml" /> 
+
+       <field name="praefix" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_PRAEFIX"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_PRAEFIX" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+ <field name="union" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_UNION"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_UNION" input_type="list" table="#__clubmanager_union" key_field="id" value_field="shortname"  /> 
+
+       <field name="filter_union" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_CLUBMANAGER_CLUBS_UNION_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `shortname` AS val FROM `#__clubmanager_union`" key_field="id" value_field="val"
+             /> 
+
+       <field name="name" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_NAME"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_NAME" 
+                                                    
+                                                    
+                                                     required="true" 
+                                                    filter="safehtml" /> 
+
+       <field name="street" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_STREET"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_STREET" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+ <field name="postalcode" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_POSTALCODE"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_POSTALCODE" input_type="list" table="#__clubmanager_city" key_field="id" value_field="postalcode"  /> 
+
+ <field name="city" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_CITY"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_CITY" input_type="list" table="#__clubmanager_city" key_field="id" value_field="name"  /> 
+
+ <field name="country" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_COUNTRY"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_COUNTRY" input_type="list" table="#__clubmanager_country" key_field="id" value_field="name"  /> 
+
+       <field name="filter_country" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_CLUBMANAGER_CLUBS_COUNTRY_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `name` AS val FROM `#__clubmanager_country`" key_field="id" value_field="val"
+             /> 
+
+ <field name="county" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_COUNTY"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_COUNTY" input_type="list" table="#__clubmanager_county" key_field="id" value_field="name"  /> 
+
+       <field name="filter_county" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_CLUBMANAGER_CLUBS_COUNTY_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `name` AS val FROM `#__clubmanager_county`" key_field="id" value_field="val"
+             /> 
+
+ <field name="district" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_DISTRICT"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_DISTRICT" input_type="list" table="#__clubmanager_district" key_field="id" value_field="name"  /> 
+
+       <field name="filter_district" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_CLUBMANAGER_CLUBS_DISTRICT_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `name` AS val FROM `#__clubmanager_district`" key_field="id" value_field="val"
+             /> 
+
+       <field name="ownclub" type="checkbox"
+                
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_OWNCLUB"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_OWNCLUB" 
+                 default="0" 
+                
+                
+            value="0"
+            class="cbDefault" /> 
+
+       <field name="zvrno" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_ZVRNO"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_ZVRNO" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="website" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_WEBSITE"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_WEBSITE" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="phone1" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_PHONE1"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_PHONE1" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="phone2" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_PHONE2"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_PHONE2" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="phone3" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_PHONE3"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_PHONE3" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="email1" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_EMAIL1"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_EMAIL1" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="email2" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_EMAIL2"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_EMAIL2" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="email3" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_EMAIL3"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_EMAIL3" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="location" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_LOCATION"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_LOCATION" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="distance" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_DISTANCE"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_DISTANCE" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+ <field name="unioncountry" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_UNIONCOUNTRY"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_UNIONCOUNTRY" input_type="list" table="#__clubmanager_unioncountry" key_field="id" value_field="name"  /> 
+
+       <field name="filter_unioncountry" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_CLUBMANAGER_CLUBS_UNIONCOUNTRY_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `name` AS val FROM `#__clubmanager_unioncountry`" key_field="id" value_field="val"
+             /> 
+
+ <field name="unioncounty" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_UNIONCOUNTY"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_UNIONCOUNTY" input_type="list" table="#__clubmanager_unioncounty" key_field="id" value_field="name"  /> 
+
+       <field name="filter_unioncounty" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_CLUBMANAGER_CLUBS_UNIONCOUNTY_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `name` AS val FROM `#__clubmanager_unioncounty`" key_field="id" value_field="val"
+             /> 
+
+ <field name="uniondistrict" type="foreignkey" class="inputbox"
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_UNIONDISTRICT"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_UNIONDISTRICT" input_type="list" table="#__clubmanager_uniondistrict" key_field="id" value_field="fullname"  /> 
+
+       <field name="filter_uniondistrict" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_CLUBMANAGER_CLUBS_UNIONDISTRICT_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `name` AS val FROM `#__clubmanager_uniondistrict`" key_field="id" value_field="val"
+             /> 
+
+       <field name="uniondistrictno" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_UNIONDISTRICTNO"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_UNIONDISTRICTNO" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="default" type="checkbox"
+                
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_DEFAULT"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_DEFAULT" 
+                 default="0" 
+                
+                
+            value="0"
+            class="cbDefault" /> 
+
+       <field name="comment" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_COMMENT"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_COMMENT" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_CLUBMANAGER_FORM_LBL_CLUB_CREATED_BY"
+            description="COM_CLUBMANAGER_FORM_DESC_CLUB_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

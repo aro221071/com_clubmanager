@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="tablename" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_TABLENAME"
+            description="COM_CLUBMANAGER_FORM_DESC_CHANGELOG_TABLENAME" 
+                                                    
+                                                    
+                                                     required="true" 
+                                                    filter="safehtml" /> 
+
+       <field name="columnname" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_COLUMNNAME"
+            description="COM_CLUBMANAGER_FORM_DESC_CHANGELOG_COLUMNNAME" 
+                                                    
+                                                    
+                                                     required="true" 
+                                                    filter="safehtml" /> 
+
+       <field name="recordid" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_RECORDID"
+            description="COM_CLUBMANAGER_FORM_DESC_CHANGELOG_RECORDID" 
+                                                    
+                                                    
+                                                     required="true" 
+                                                    filter="safehtml" /> 
+
+       <field name="valueold" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_VALUEOLD"
+            description="COM_CLUBMANAGER_FORM_DESC_CHANGELOG_VALUEOLD" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="valuenew" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_VALUENEW"
+            description="COM_CLUBMANAGER_FORM_DESC_CHANGELOG_VALUENEW" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="created" type="calendar" class="inputbox"
+        
+        
+         default="0000-00-00 00:00:00" 
+        
+            label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_CREATED"
+            description="COM_CLUBMANAGER_FORM_DESC_CHANGELOG_CREATED" 
+        format="%Y-%m-%d %H:%M:%S"
+        filter="safehtml" /> 
+
+       <field name="comment" type="text" size="40" class="inputbox"
+                                                    
+            label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_COMMENT"
+            description="COM_CLUBMANAGER_FORM_DESC_CHANGELOG_COMMENT" 
+                                                    
+                                                    
+                                                    
+                                                    filter="safehtml" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_CLUBMANAGER_FORM_LBL_CHANGELOG_CREATED_BY"
+            description="COM_CLUBMANAGER_FORM_DESC_CHANGELOG_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>
